@@ -19,6 +19,8 @@ a {
 }
 h1 {
   border-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   background-color: var(--filler);
   width: auto;
   padding: 1%;
@@ -35,11 +37,20 @@ main {
   background-color: var(--filler);
   border-radius: 15px;
   margin-left: 6rem;
+  margin-right: 1rem;
+
   margin-top: 1rem;
   padding: 1rem;
   width: auto;
   /* margin-right: 10rem; */
 }
+.carousel {
+  height: auto;
+}
+.carousel .carousel-item {
+  width: 100%;
+}
+
 
 .navbar {
   border-radius: 15px;
@@ -53,6 +64,7 @@ main {
 .navbar:hover {
   width: 16rem;
   border-right: 1rem solid var(--background);
+  z-index: 2;
 }
 
 .navbar:hover .menuLinkText {
@@ -99,7 +111,7 @@ main {
 }
 
 .websitePort {
- width: 90%;
+  width: 90%;
 
 }
 
