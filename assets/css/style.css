@@ -37,8 +37,7 @@ main {
   background-color: var(--filler);
   border-radius: 15px;
   margin-left: 6rem;
-  margin-right: 1rem;
-
+  margin-right: .75rem;
   margin-top: 1rem;
   padding: 1rem;
   width: auto;
@@ -54,6 +53,7 @@ main {
 
 .navbar {
   border-radius: 15px;
+  margin-left: .25rem;
   width: 5rem;
   height: 90vh;
   position: fixed;
@@ -61,15 +61,6 @@ main {
   transition: width 200ms ease;
 }
 
-.navbar:hover {
-  width: 16rem;
-  border-right: 1rem solid var(--background);
-  z-index: 2;
-}
-
-.navbar:hover .menuLinkText {
-  display: block;
-}
 
 .menu {
   display: flex;
@@ -81,7 +72,6 @@ main {
   margin: 0;
   margin-bottom: 10%;
 }
-
 
 .menuItem {
   width: 100%;
@@ -102,26 +92,53 @@ main {
 .menuLinkText{
   display: none;
   margin-left: 1rem;
-
   font-size: 2rem;
 }
 
-.aboutMe {
-  width: 90%;
+/* small screen  */
+@media only screen and (max-width: 600px){
+  .navbar{
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    margin: 0;
+  }
+  .menu {
+    flex-direction: row;
+
+  }
+  .menuItem {
+    justify-content: center;
+  }
+
+  main {
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+ 
 }
 
-.websitePort {
-  width: 90%;
+@media only screen and (min-width: 600px){
+  .navbar {
+    width: 5rem;
+    height: 75vh;
+  }
 
+  .navbar:hover {
+    width: 16rem;
+  }
+
+.navbar:hover {
+  width: 16rem;
+  border-right: 1rem solid var(--background);
+  z-index: 2;
 }
 
-footer {
-  border-radius: 15px;
-  /* background-color: var( /); */
-  padding: 1%;
-  text-align: left;
-  height: 100%;
-  margin: 0;
-  margin-left: 5rem ;
-
+  .navbar:hover .menuLinkText {
+    display: inline;
+  }
 }
+
+
+
