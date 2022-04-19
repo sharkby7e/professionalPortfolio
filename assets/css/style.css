@@ -17,6 +17,7 @@ a {
   text-decoration: none;
   color: var(--text);
 }
+
 h1 {
   border-radius: 15px;
   border-top-right-radius: 0;
@@ -58,7 +59,7 @@ main {
   height: 90vh;
   position: fixed;
   background-color: var(--filler);
-  transition: width 200ms ease;
+  transition: width 300ms ease;
 }
 
 
