@@ -30,8 +30,7 @@ h1 {
   margin: 0;
   margin-left: 3rem ;
   margin-bottom: 1rem;
-  /* margin-right: 3rem; */
-  font-size: 3rem;
+  font-weight: 700;
 }
 
 main {
