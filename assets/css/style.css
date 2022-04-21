@@ -48,8 +48,8 @@ main {
   width: auto;
   /* margin-right: 10rem; */
 }
-.carousel {
-  height: auto;
+.carousel.carousel-slider {
+ height: auto;
 }
 .carousel .carousel-item {
   width: 100%;
