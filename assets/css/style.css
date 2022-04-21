@@ -46,6 +46,7 @@ main {
   margin-top: 1rem;
   padding: 1rem;
   width: auto;
+  max-height: 95vh;
   /* margin-right: 10rem; */
 }
 .carousel.carousel-slider {
@@ -110,18 +111,19 @@ main {
   }
   .menu {
     flex-direction: row;
-
   }
   .menuItem {
     justify-content: center;
   }
 
+  body {
+    font-size: 2vh;
+  }
   main {
     margin-right: .5rem;
     margin-left: .5rem;
+    max-height: 80vh
   }
-
- 
 }
 
 @media only screen and (min-width: 600px){
