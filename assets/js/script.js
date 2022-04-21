@@ -1,4 +1,4 @@
-console.log("script is linked")
+// console.log("script is linked")
 
 $(document).ready(function(){
   $('.carousel').carousel({
